@@ -1,0 +1,104 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Comida para tus Mascotas',
+      price: 3000,
+    }
+}),
+db.products.updateOne(
+  // query
+  {_id: 2},
+  // change => operators
+  {
+    $set: {
+      name: 'Collar reluciente',
+      price: 9000,
+    }
+}),
+db.products.updateOne(
+  // query
+  {_id: 3},
+  // change => operators
+  {
+    $set: {
+      name: 'Juguete Interactivo',
+      price: 4500,
+    }
+}),
+db.products.updateOne(
+  // query
+  {_id: 4},
+  // change => operators
+  {
+    $set: {
+      name: 'Premios para Mascotas',
+      price: 2000,
+    }
+}),
+db.products.updateOne(
+  // query
+  {_id: 5},
+  // change => operators
+  {
+    $set: {
+      name: 'Gafas Decorativas',
+      price: 7000,
+    }
+}),
+db.products.updateOne(
+  // query
+{_id: 6},
+// change => operators
+{
+  $set: {
+    name: 'Collar Paseador',
+    price: 1500,
+  }
+}),
+db.products.updateOne(
+// query
+{_id: 7},
+// change => operators
+{
+  $set: {
+    name: 'Cepillo Electrico',
+    price: 2500,
+  }
+}),
+db.products.updateOne(
+// query
+{_id: 8},
+// change => operators
+{
+  $set: {
+    name: 'Cama Acolchonada',
+    price: 3500,
+  }
+}),
+db.products.updateOne(
+// query
+{_id: 9},
+// change => operators
+{
+  $set: {
+    name: 'Coca para Comida',
+    price: 1200,
+  }
+}),
+db.products.updateOne(
+// query
+{_id: 10},
+// change => operators
+{
+  $set: {
+    name: 'Gorro decorativo para Perros',
+    price: 1800,
+  }
+})
