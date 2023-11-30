@@ -1,0 +1,169 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    title: "Comida para Perros",
+    price: 4000,
+    description: "Cuidadosamente diseñada para satisfacer las necesidades nutricionales específicas de perros de todas las edades y razas.",
+    category:"Alimentos",
+    image: ""
+  },
+  {
+    _id: 2,
+    title: "Collar Brillante para Gatos",
+    price: 8000,
+    description: "Diseñado para satisfacer las necesidades únicas de tu felino elegante.",
+    category:"Accesorios",
+    image: ""
+  },
+  {
+    _id: 3,
+    title: "Juguete Masticable",
+    price: 5000,
+    description: "Juguete divertido y desafiante: los piñones de goma texturizados y los pomos de nailon suaves hacen que sea difícil para tu perro acceder a los anillos de golosinas; mantiene a tu perro jugando más tiempo",
+    category:"Juguetes",
+    image: ""
+  },
+  {
+    _id: 4,
+    title: "Golosinas y Premios",
+    price: 3500,
+    description: "Creadas con ingredientes de alta calidad y un sabor irresistible, estas golosinas ofrecen una experiencia de premio que deleitará a tu perro y fortalecerá vuestro vínculo.",
+    category:"Alimentos",
+    image: ""
+  },
+  {
+    _id: 5,
+    title: "Acondicionador para Mascotas",
+    price: 10500,
+    description: "Diseñado para realzar la belleza natural de su pelaje y proporcionar una experiencia de aseo placentera, este acondicionador ha sido formulado con ingredientes de alta calidad para mimar y nutrir la piel y el pelaje de tu fiel compañero.",
+    category:"Limpieza",
+    image: ""
+  },
+  {
+    _id: 6,
+    title: "Cepillos",
+    price: 9000,
+    description: "Es una experiencia de cuidado delicado y efectivo para el pelaje de tu mascota.",
+    category:"Limpieza",
+    image: ""
+  },
+  {
+    _id: 7,
+    title: "Pelotas Interactivas",
+    price: 4800,
+    description: "Diseñada con ingenio y resistencia, esta pelota ofrece a tus mascotas horas de entretenimiento activo y desafiante, promoviendo el ejercicio y el bienestar físico y mental.",
+    category:"Juguetes",
+    image: ""
+  },
+  {
+    _id: 8,
+    title: "Sombreros decorativos",
+    price: 7000,
+    description: "Diseñado con creatividad y comodidad en mente, este sombrero no solo es un accesorio encantador, sino también una declaración de moda que hará que tu mascota se destaque con elegancia.",
+    category:"Accesorios",
+    image: ""
+  },
+  {
+    _id: 9,
+    title: "Comida Enlatada para Gato",
+    price: 6000,
+    description: "Es una experiencia culinaria excepcionalmente deliciosa y nutritiva diseñada para satisfacer el paladar más exigente de tu felino. ",
+    category:"Alimentos",
+    image: ""
+  },
+  {
+    _id: 10,
+    title: "Bolsos de Transporte",
+    price: 15000,
+    description: "Es la solución perfecta para llevar a tu mascota de manera segura y con estilo.",
+    category:"Transporte",
+    image: ""
+  },
+  {
+    _id: 11,
+    title: "Set de Juguetes Interactivos para Gatos",
+    price: 7200,
+    description: "Estimula la mente felina con una variedad de juguetes. ",
+    category:"Juguetes",
+    image: ""
+  },
+  {
+    _id: 12,
+    title: "Juguetes de Cuerda Resistentes para Perros",
+    price: 5000,
+    description: "Fabricados con materiales duraderos, estos juguetes ofrecen horas de diversión interactiva y son perfectos para el juego en interiores y exteriores.",
+    category:"Juguetes",
+    image: ""
+  },
+  {
+    _id: 13,
+    title: "Bolsa de Golosinas para Perros",
+    price: 3600,
+    description: "Con compartimentos y cierre hermético, esta bolsa te permite llevar golosinas de manera conveniente durante paseos y sesiones de entrenamiento, recompensando a tu perro con deliciosos premios.",
+    category:"Alimentos",
+    image: ""
+  },
+  {
+    _id: 14,
+    title: "Rascador Vertical para Gatos",
+    price: 8500,
+    description: "Con una base estable y una superficie de sisal duradera, este rascador ofrece a tu gato un lugar designado para afilar sus garras, evitando daños en muebles. ",
+    category:"Juguetes",
+    image: ""
+  },
+  {
+    _id: 15,
+    title: "Cepillo Electrico para Perros",
+    price: 100,
+    description: "Con cerdas suaves y un motor silencioso, este cepillo elimina el pelo suelto y masajea la piel de tu perro, promoviendo la salud del pelaje y fortaleciendo el vínculo entre tú y tu mascota.",
+    category:"Limpieza",
+    image: ""
+  },
+  {
+    _id: 16,
+    title: "Limpiador de Oidos",
+    price: 4800,
+    description: "Solución suave para limpiar los oídos de tu mascota, ayudando a prevenir problemas de oído y manteniendo la higiene auditiva.",
+    category:"Cuidado y Salud",
+    image: ""
+  },
+  {
+    _id: 17,
+    title: "Set de Comida para Perro",
+    price: 7100,
+    description: "Delicios golosinas, premios e incluso cuido para tu mejor amigo",
+    category:"Alimentos",
+    image: ""
+  },
+  {
+    _id: 18,
+    title: "Comedero Automatico",
+    price: 20000,
+    description: "Con temporizadores programables, porciones precisas y un diseño fácil de limpiar, este comedero automático asegura que tu mascota reciba sus comidas de manera puntual y controlada. ",
+    category:"Accesorios",
+    image: ""
+  },
+  {
+    _id: 19,
+    title: "Cortauñas Electrico para Gatos",
+    price: 6900,
+    description: "Herramienta segura y eficiente para cortar las uñas de tu mascota, con opciones de velocidad ajustable y diseñado para un uso cómodo.",
+    category:"Cuidado y Salud",
+    image: ""
+  },
+  {
+    _id: 20,
+    title: "Pipetas Antipulgas y Garrapatas para Gatos",
+    price: 4000,
+    description: "Tratamiento tópico que proporciona protección contra pulgas y garrapatas, aplicado directamente en la piel del gato para una eficacia duradera.",
+    category:"Cuidado y Salud",
+    image: ""
+  },
+
+])
